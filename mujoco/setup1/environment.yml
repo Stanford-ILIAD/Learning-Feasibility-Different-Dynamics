@@ -1,0 +1,23 @@
+name: jax-sac
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - numpy=1.19.2
+  - scipy=1.6.0
+  - pip:
+    - absl-py==0.11.0
+    - gym[mujoco]==0.18.0
+    - gdown
+    - tqdm==4.50.2
+    - flax==0.3.0
+    - jax==0.2.9
+    - jaxlib==0.1.59
+    - ml_collections==0.1.0
+    - tensorboardX==2.1
+    - tensorflow_probability==0.12.1
+    - imageio
+    - imageio-ffmpeg
+    - git+https://github.com/rail-berkeley/d4rl@master#egg=d4rl
+    - git+git://github.com/denisyarats/dmc2gym.git
+prefix: $HOME/anaconda3

@@ -1,0 +1,40 @@
+from gym.envs.registration import register
+
+register(
+    id='CustomSwimmer-v0',
+    entry_point='swimmer.swimmer_v3:SwimmerEnv',
+    max_episode_steps=1000,
+    reward_threshold=360.0,
+)
+register(
+    id='CustomSwimmerOurs-v0',
+    entry_point='swimmer.swimmer_v3:SwimmerOursEnv',
+    max_episode_steps=1000,
+    reward_threshold=360.0,
+)
+register(
+    id='CustomSwimmerOursGT-v0',
+    entry_point='swimmer.swimmer_v3:SwimmerOursGTEnv',
+    max_episode_steps=1000,
+    reward_threshold=360.0,
+)
+register(
+    id='CustomSwimmerFeasibility-v0',
+    entry_point='swimmer.swimmer_v3:SwimmerFeasibilityEnv',
+    max_episode_steps=1000,
+    reward_threshold=360.0,
+)
+'''
+register(
+    id='FrontLongSwimmer-v0',
+    entry_point='swimmer.swimmer:FrontLongSwimmerEnv',
+    max_episode_steps=1000,
+    reward_threshold=360.0,
+)
+register(
+    id='BackLongSwimmer-v0',
+    entry_point='swimmer.swimmer:BackLongSwimmerEnv',
+    max_episode_steps=1000,
+    reward_threshold=360.0,
+)
+'''
